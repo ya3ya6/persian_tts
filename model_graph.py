@@ -143,10 +143,10 @@ class model(object):
             superresolution_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'Super_Resolution_Network')
 
             sv1 = tf.train.Saver(var_list=text2sp_vars)
-            sv1.restore(self.sess, tf.train.latest_checkpoint('logs/text-to-spec'))
+            #sv1.restore(self.sess, tf.train.latest_checkpoint('logs/text-to-spec'))
 
             sv2 = tf.train.Saver(var_list=superresolution_vars)
-            sv2.restore(self.sess, tf.train.latest_checkpoint('logs/super_resolution'))
+            #sv2.restore(self.sess, tf.train.latest_checkpoint('logs/super_resolution'))
             print('model loaded :)')
         tf.summary.merge_all()
     
