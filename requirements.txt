@@ -9,7 +9,7 @@ Flask-Cors==3.0.8
 # ----------------------
 # Testing
 # ----------------------
-mock
+#mock
 
 
 # ----------------------
@@ -20,7 +20,7 @@ gunicorn
 
 # ------------ This project: persian text to speech
 numpy==1.21
-tensorflow
+tensorflow-cpu
 scipy
 tqdm
 librosa
