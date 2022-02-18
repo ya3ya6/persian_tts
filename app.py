@@ -22,7 +22,6 @@ sys.path.append('network')
 from hp import HP
 from model_graph import model
 tf.reset_default_graph()
-#gr=model('null','demo')
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -46,6 +45,7 @@ def hello():
         if data:
             try:
                 sentenses=[data]
+                gr=model('null','demo')
                 gr.predict(sentenses)
                 #import IPython
                 #IPython.display.Audio("generated_samples/1.wav")
