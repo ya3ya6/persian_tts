@@ -22,7 +22,7 @@ sys.path.append('network')
 from hp import HP
 from model_graph import model
 tf.reset_default_graph()
-gr=model('null','demo')
+#gr=model('null','demo')
 
 app = Flask(__name__)
 cors = CORS(app)
