@@ -1,0 +1,27 @@
+# ----------------------
+# Flask
+# ----------------------
+flask
+#me
+Flask-Cors==3.0.8
+
+
+# ----------------------
+# Testing
+# ----------------------
+mock
+
+
+# ----------------------
+# Production Server
+# ----------------------
+gevent
+gunicorn
+
+# ------------ This project: persian text to speech
+numpy==1.21
+tensorflow
+scipy
+tqdm
+librosa
+ipython
